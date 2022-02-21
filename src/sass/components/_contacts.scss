@@ -1,5 +1,6 @@
 .contacts {
   @include font;
+  width: 100%;
   background-color: #fff5f6;
   @include desk {
     background-image: url("../images/contacts-webp/contacts-bg.webp");
