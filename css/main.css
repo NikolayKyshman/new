@@ -81,7 +81,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .contacts {
     background-image: url "../images/contacts-webp/contacts-bg-2x.webp";
   }
@@ -89,8 +89,6 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .contacts__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 768px;
     margin: 0 auto;
@@ -109,8 +107,7 @@ textarea {
   display: block;
   margin: 0 auto;
   background: #ffffff;
-  -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   width: 220px;
   padding: 43px 20px;
@@ -141,16 +138,10 @@ textarea {
   font-size: 12px;
   line-height: 1.83333;
   letter-spacing: 0.04em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   color: #ffffff;
   background-color: #f0d1a5;
   border-radius: 4px;
@@ -353,16 +344,10 @@ textarea {
 }
 
 .contacts__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: #fff;
   border-radius: 22px;
   margin: 0 auto;
@@ -371,7 +356,6 @@ textarea {
   margin-bottom: 10px;
   padding-left: 16px;
   padding-right: 17px;
-  -webkit-transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -422,16 +406,10 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .contacts__btn--wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin-top: 81px;
   }
 }
@@ -461,12 +439,8 @@ textarea {
   width: 8px;
   height: 8px;
   margin-top: 3px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
 }
 
