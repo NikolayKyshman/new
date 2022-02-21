@@ -70,8 +70,20 @@ textarea {
 }
 
 .contacts {
-  background-color: #fff5f6;
   font-family: 'DM Sans', sans-serif;
+  background-color: #fff5f6;
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts {
+    background-image: url("../images/contacts-webp/contacts-bg.webp");
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url "../../images/contacts-webp/contacts-bg-2x.webp";
+  }
 }
 
 @media screen and (min-width: 768px) {
