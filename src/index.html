@@ -16,17 +16,107 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./sass/main.css">
   </head>
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <!-- <include src="./partials/example.html"></include> -->
-    <include src="./partials/contacts.html"></include>
+    <!-- <include src="./partials/contacts.html"></include>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-    <script src="./index.js"></script>
+    <!-- <script src="./index.js"></script> -->
+    <section class="contacts">
+      <h2 class="visually-hidden">contacts</h2>
+          <div class="container contacts__container">
+              <div class="contacts__card">
+                  <p class="contacts__title">CAFE</p>
+                      <div class="contacts__location location">
+                          <div class="location__city">Chicago</div>
+                          <p class="location__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                      </div>
+                      <div class="contacts__week week">
+                          <div class="week__day">Monday - Friday</div>
+                          <p class="week__time">06:00 AM - 10:00 PM</p>
+                          <div class="week__day">Saturday - Sunday</div>
+                          <p class="week__time">08:00 AM - 16:00 PM</p>
+                      </div>
+                      <div class="contacts__conection conection">
+                          <ul class="conection__list">
+                              <li class="conection__link">
+                                  <a class="conection__nav conection__tel" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
+                              </li>
+                              <li class="conection__link">
+                                  <a class="conection__nav conection__mail" href="mailto:noreply@envato.com">noreply@envato.com</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+  
+                  <div class="contacts__card">
+                      <p class="contacts__title contacts__truck">FOODTRUCK</p>
+                          <div class="contacts__location location">
+                              <div class="location__city">Los Angeles</div>
+                              <p class="location__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                          </div>
+                          <div class="contacts__week week">
+                              <div class="week__day">Monday - Friday</div>
+                              <p class="week__time">06:00 AM - 10:00 PM</p>
+                              <div class="week__day">Saturday - Sunday</div>
+                              <p class="week__time">08:00 AM - 16:00 PM</p>
+                          </div>
+                          <div class="contacts__conection conection">
+                              <ul class="conection__list">
+                                  <li class="conection__link">
+                                      <a class="conection__nav conection__tel" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
+                                  </li>
+                                  <li class="conection__link">
+                                      <a class="conection__nav conection__mail" href="mailto:noreply@envato.com">noreply@envato.com</a>
+                                  </li>
+                              </ul>
+                          </div>
+                  </div>
+  
+                  <div class="contacts__card">
+                      <p class="contacts__title">CAFE</p>
+                          <div class="contacts__location location">
+                              <div class="location__city">New York</div>
+                                  <p class="location__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                          </div>
+                          <div class="contacts__week week">
+                              <div class="week__day">Monday - Friday</div>
+                                  <p class="week__time">06:00 AM - 10:00 PM</p>
+                              <div class="week__day">Saturday - Sunday</div>
+                          <p class="week__time">08:00 AM - 16:00 PM</p>
+                          </div>
+                          <div class="contacts__conection conection">
+                              <ul class="conection__list">
+                                  <li class="conection__link">
+                                      <a class="conection__nav conection__tel" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
+                                  </li>
+                                  <li class="conection__link">
+                                      <a class="conection__nav conection__mail" href="mailto:noreply@envato.com">noreply@envato.com</a>
+                                  </li>
+                              </ul>
+                          </div>
+                    </div>
+          </div>
+  
+          <div class="contacts__btn--wrap"> 
+              <button type="button" class="contacts__btn"><span class="contacts__btn--text">Our Locations</span>
+                  <svg class="contacts__btn--icons" width="4" height="8">
+                      <use href="./images/svg/sprite.svg#icon-arrow-right-button"></use>
+                  </svg>
+              </button>
+              <button type="button" class="contacts__btn contacts__franchise"><span class="contacts__btn--text">Franchise</span>
+                  <svg class="contacts__btn--icons" width="4" height="8">
+                      <use href="./images/svg/sprite.svg#icon-arrow-right-button"></use>
+                  </svg>
+              </button>
+          </div>   
+  </section>
   </body>
 </html>
