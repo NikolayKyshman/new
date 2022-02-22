@@ -1,5 +1,4 @@
 .contacts {
-  position: relative;
   @include font;
   width: 100%;
   background-color: #fff5f6;
@@ -13,13 +12,6 @@
       background-image: url ("../images/contacts-webp/contacts-bg-2x.webp");
     }
   }
-}
-
-.contacts__wrap {
-  position: absolute;
-  top: -84px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .contacts__container {
