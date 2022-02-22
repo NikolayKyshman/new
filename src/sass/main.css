@@ -1,5 +1,5 @@
 body {
-  font-family: 'Titan One', sans-serif;
+  font-family: "Titan One", sans-serif;
 }
 
 .container {
@@ -71,13 +71,14 @@ textarea {
 
 .contacts {
   font-family: 'DM Sans', sans-serif;
-  width: 100%;
   background-color: #fff5f6;
 }
 
 @media screen and (min-width: 1280px) {
   .contacts {
     background-image: url("../images/contacts-webp/contacts-bg.webp");
+    background-repeat: no-repeat;
+    background-size: common;
   }
 }
 
@@ -87,6 +88,11 @@ textarea {
   }
 }
 
+.contacts__container {
+  position: relative;
+  top: -84px;
+}
+
 @media screen and (min-width: 768px) {
   .contacts__container {
     display: -webkit-box;
@@ -94,6 +100,8 @@ textarea {
     display: flex;
     width: 768px;
     margin: 0 auto;
+    position: relative;
+    top: -78px;
   }
 }
 
@@ -102,6 +110,8 @@ textarea {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
+    position: relative;
+    top: -102px;
   }
 }
 
@@ -418,6 +428,8 @@ textarea {
 
 .contacts__btn--wrap {
   margin-top: 54px;
+  position: relative;
+  top: -84px;
 }
 
 @media screen and (min-width: 768px) {
@@ -433,12 +445,14 @@ textarea {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 81px;
+    top: -78px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .contacts__btn--wrap {
     margin-top: 86px;
+    top: -102px;
   }
 }
 

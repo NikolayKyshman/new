@@ -1,6 +1,5 @@
 .contacts {
   @include font;
-  width: 100%;
   background-color: #fff5f6;
   @include desk {
     background-image: url("../images/contacts-webp/contacts-bg.webp");
@@ -15,15 +14,21 @@
 }
 
 .contacts__container {
+  position: relative;
+  top: -84px;
   @include tab {
     display: flex;
     width: 768px;
     margin: 0 auto;
+    position: relative;
+    top: -78px;
   }
   @include desk {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
+    position: relative;
+    top: -102px;
   }
 }
 
@@ -226,15 +231,19 @@
 
 .contacts__btn--wrap {
   margin-top: 54px;
+  position: relative;
+  top: -84px;
   @include tab {
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
     margin-top: 81px;
+    top: -78px;
   }
   @include desk {
     margin-top: 86px;
+    top: -102px;
   }
 }
 
