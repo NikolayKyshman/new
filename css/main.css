@@ -70,6 +70,7 @@ textarea {
 }
 
 .contacts {
+  position: relative;
   font-family: 'DM Sans', sans-serif;
   width: 100%;
   background-color: #fff5f6;
@@ -78,6 +79,8 @@ textarea {
 @media screen and (min-width: 1280px) {
   .contacts {
     background-image: url("../images/contacts-webp/contacts-bg.webp");
+    background-repeat: no-repeat;
+    background-size: common;
   }
 }
 
@@ -85,6 +88,13 @@ textarea {
   .contacts {
     background-image: url "../images/contacts-webp/contacts-bg-2x.webp";
   }
+}
+
+.contacts__wrap {
+  position: absolute;
+  top: -84px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media screen and (min-width: 768px) {
