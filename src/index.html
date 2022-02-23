@@ -106,17 +106,51 @@
           </div>
   
           <div class="contacts__btn--wrap"> 
-              <button type="button" class="contacts__btn"><span class="contacts__btn--text">Our Locations</span>
+              <button type="button" class="contacts__btn" data-modal-open><span class="contacts__btn--text">Our Locations</span>
                   <svg class="contacts__btn--icons" width="4" height="8">
                       <use href="./images/svg/sprite.svg#icon-arrow-right-button"></use>
                   </svg>
               </button>
-              <button type="button" class="contacts__btn contacts__franchise"><span class="contacts__btn--text">Franchise</span>
+              <button type="button" class="contacts__btn contacts__franchise" data-modal-open><span class="contacts__btn--text">Franchise</span>
                   <svg class="contacts__btn--icons" width="4" height="8">
                       <use href="./images/svg/sprite.svg#icon-arrow-right-button"></use>
                   </svg>
               </button>
           </div>   
   </section>
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal__close" data-modal-close> X
+        </button>
+        <legend class="modal__title">Love iscream</legend>
+        <form>
+            <div class="modal-form">
+                <label class="modal-form__text" for="name">name</label>
+                <div class="modal-form__wrap">
+                    <input type="text" name="name" id="name" class="modal-form__input">
+                </div>
+            </div>
+            <div class="modal-form">
+                <label class="modal-form__text" for="tel">Tel</label>
+                <div class="modal-form__wrap">
+                    <input type="tel" name="tel" id="tel" class="modal-form__input">
+                </div>
+            </div>
+            <div class="modal-form">
+                <label class="modal-form__text" for="email">mail</label>
+                <div class="modal-form__wrap">
+                    <input type="email" name="email" id="email" class="modal-form__input">
+                   
+                </div>
+            </div>
+
+            <button class="modal-form__button" type="submit"><span
+                    class="modal-form__btn-text">Отправить</span></button>
+        </form>
+    </div>
+</div>
+
+  <script src="./js/modal.js"></script>
   </body>
 </html>
